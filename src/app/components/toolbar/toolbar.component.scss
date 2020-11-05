@@ -3,7 +3,7 @@
 .toolbar-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 10px;
   background-color: $blue;
