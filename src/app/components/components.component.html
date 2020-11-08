@@ -13,3 +13,13 @@
     <app-accordion [items]="accordionItems"></app-accordion>
   </div>
 </app-card>
+
+<!-- progress bar -->
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress bar'" [subTitle]="'reusable component'">
+  <div body>
+    <app-progress-bar [value]=progressbarValue></app-progress-bar>
+  </div>
+  <div footer>
+    <button (click)="progressbarValue = 75">update</button>
+  </div>
+</app-card>

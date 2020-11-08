@@ -13,6 +13,8 @@ export class ComponentsComponent implements OnInit {
     { title: 'second accordion item', content: '[content]', isExpanded: false}
   ];
 
+  public progressbarValue = 25;
+
   constructor() { }
 
   ngOnInit(): void {
