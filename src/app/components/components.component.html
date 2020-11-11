@@ -23,3 +23,10 @@
     <button (click)="progressbarValue = 75">update</button>
   </div>
 </app-card>
+
+<!-- star rating -->
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star rating'" [subTitle]="'reusable component'">
+  <div body>
+    <app-star-rating [rating]="3.000000001" [max]="5" ></app-star-rating>
+  </div>
+</app-card>
