@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     AccordionComponent,
     ProgressBarComponent,
     StarRatingComponent,
+    TopOfPageComponent,
   ],
   imports: [
     CommonModule,
