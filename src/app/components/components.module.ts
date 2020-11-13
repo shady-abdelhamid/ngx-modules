@@ -8,11 +8,11 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    CardComponent,
     ComponentsComponent,
     AccordionComponent,
     ProgressBarComponent,
@@ -21,6 +21,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     ComponentsRoutingModule
   ]
 })
