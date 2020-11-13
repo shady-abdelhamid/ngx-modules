@@ -1,1 +1,7 @@
-<p>pipes works!</p>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'truncate'" [subTitle]="'reusable pipes'">
+  <div body>
+    <p>
+      {{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus magnam natus doloribus architecto quas facilis. Omnis veritatis praesentium sint obcaecati natus eos, optio magni at neque eveniet inventore ab.' | truncate:50 }}
+    </p>
+  </div>
+</app-card>
