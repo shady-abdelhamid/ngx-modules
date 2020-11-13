@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [{ path: '', loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule) }];
+const routes: Routes = [{ path: '', loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule) }, { path: 'pipes', loadChildren: () => import('./pipes/pipes.module').then(m => m.PipesModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
