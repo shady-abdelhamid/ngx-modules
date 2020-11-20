@@ -5,3 +5,17 @@
     </p>
   </div>
 </app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit card formatter'" [subTitle]="'reusable pipes'">
+  <div body>
+    <p>
+      {{'1111222233334444' | creditCardFormatter }}
+    </p>
+    <p>
+      {{'11112222333344445555' | creditCardFormatter }}
+    </p>
+    <p>
+      {{'111122223333444a' | creditCardFormatter }}
+    </p>
+  </div>
+</app-card>
