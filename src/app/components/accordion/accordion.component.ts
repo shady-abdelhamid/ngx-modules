@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { AccordionItem } from './accordion-item.interface';
 
 @Component({
-  selector: 'app-accordion',
+  selector: 'accordion',
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.scss']
 })

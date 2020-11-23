@@ -2,7 +2,7 @@ import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-top-of-page',
+  selector: 'top-of-page',
   templateUrl: './top-of-page.component.html',
   styleUrls: ['./top-of-page.component.scss']
 })

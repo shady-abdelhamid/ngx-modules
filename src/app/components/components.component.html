@@ -1,36 +1,37 @@
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'[title]'" [subTitle]="'[subTitle]'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'[title]'" [subTitle]="'[subTitle]'">
   <div body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic. Quae quaerat delectus pariatur odit, placeat dolores dolorum praesentium nihil at dicta nulla recusandae qui explicabo quidem iure deserunt quo!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, hic. Quae quaerat delectus pariatur odit, placeat
+    dolores dolorum praesentium nihil at dicta nulla recusandae qui explicabo quidem iure deserunt quo!
   </div>
   <div footer>
     [footer]
   </div>
-</app-card>
+</card>
 
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Accordion'" [subTitle]="'reusable component'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Accordion'" [subTitle]="'reusable component'">
   <div body>
-    <app-accordion [items]="accordionItems"></app-accordion>
+    <accordion [items]="accordionItems"></accordion>
   </div>
-</app-card>
+</card>
 
 <!-- progress bar -->
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress bar'" [subTitle]="'reusable component'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Progress bar'" [subTitle]="'reusable component'">
   <div body>
-    <app-progress-bar [value]=progressbarValue></app-progress-bar>
+    <progress-bar [value]=progressbarValue></progress-bar>
   </div>
   <div footer>
     <button (click)="progressbarValue = 75">update</button>
   </div>
-</app-card>
+</card>
 
 <!-- star rating -->
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star rating'" [subTitle]="'reusable component'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Star rating'" [subTitle]="'reusable component'">
   <div body>
-    <app-star-rating [rating]="3.000000001" [max]="5" ></app-star-rating>
+    <star-rating [rating]="3.000000001" [max]="5"></star-rating>
   </div>
-</app-card>
+</card>
 
 
 <!-- top of page -->
-<app-top-of-page></app-top-of-page>
+<top-of-page></top-of-page>

@@ -9,6 +9,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { SharedModule } from '../shared/shared.module';
     ProgressBarComponent,
     StarRatingComponent,
     TopOfPageComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     CommonModule,

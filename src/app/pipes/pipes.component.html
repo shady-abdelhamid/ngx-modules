@@ -1,12 +1,12 @@
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'truncate'" [subTitle]="'reusable pipes'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'truncate'" [subTitle]="'reusable pipes'">
   <div body>
     <p>
       {{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus magnam natus doloribus architecto quas facilis. Omnis veritatis praesentium sint obcaecati natus eos, optio magni at neque eveniet inventore ab.' | truncate:50 }}
     </p>
   </div>
-</app-card>
+</card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit card formatter'" [subTitle]="'reusable pipes'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Credit card formatter'" [subTitle]="'reusable pipes'">
   <div body>
     <p>
       {{'1111222233334444' | creditCardFormatter }}
@@ -18,4 +18,4 @@
       {{'111122223333444a' | creditCardFormatter }}
     </p>
   </div>
-</app-card>
+</card>
