@@ -10,6 +10,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
     ComponentsRoutingModule
   ]
 })

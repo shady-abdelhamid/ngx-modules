@@ -17,7 +17,6 @@ export class StarRatingComponent {
   }
 
   public get hasHalfStar(): boolean {
-    console.log(this.rating - Math.floor(this.rating));
     const hasHalfStar = (this.rating - Math.floor(this.rating) > 0) && this.rating !== this.max;
 
     return hasHalfStar;

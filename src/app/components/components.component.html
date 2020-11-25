@@ -32,6 +32,16 @@
   </div>
 </card>
 
+<!-- credit card input-->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card input'" [subTitle]="'reusable component'">
+  <div body>
+    <credit-card-input [creditCardNumber]="1111222233334444" [isReadOnly]=false></credit-card-input>
+    <br>
+    <credit-card-input [creditCardNumber]="1111222233334444" [isReadOnly]=true></credit-card-input>
+
+  </div>
+</card>
+
 
 <!-- top of page -->
 <top-of-page></top-of-page>
