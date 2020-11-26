@@ -16,7 +16,6 @@ export class TopOfPageComponent implements OnInit {
 
   @HostListener('window:scroll') onWindowScroll(): void {
     const [, y] = this.viewportScroller.getScrollPosition();
-    console.log(y);
     this.isShown = y > 400;
   }
 
