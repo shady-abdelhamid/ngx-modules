@@ -9,7 +9,16 @@
         z-index: 2;
         backdrop-filter: blur(5px);
     }
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
 
+    &__text {
+        position: absolute;
+        top: 35%;
+        width: 150px;
+    }
 
     &__spinner {
         position: absolute;
@@ -30,11 +39,6 @@
             100% {
                 transform: rotate(360deg);
             }
-        }
-
-        &-container {
-            display: flex;
-            justify-content: center;
         }
     }
 }

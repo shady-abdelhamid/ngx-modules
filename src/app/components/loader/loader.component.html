@@ -1,7 +1,10 @@
 <div class="loader" [style.display]="isLoading ? 'block' : 'none'">
   <div class="loader__overlay">
-    <div class="loader__spinner-container">
-      <div class="loader__spinner"></div>
-    </div>
+    <ng-container [ngSwitch]="loaderType">
+      <div class="loader__container" >
+        <h1 class="loader__text" *ngSwitchCase="LoaderType.Text">{{ loadingText }}</h1>
+        <div class="loader__spinner" *ngSwitchCase="LoaderType.Spinner"></div>
+      </div>
+    </ng-container>
   </div>
 </div>
