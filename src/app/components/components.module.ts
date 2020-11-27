@@ -11,6 +11,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     StarRatingComponent,
     TopOfPageComponent,
     CreditCardInputComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
