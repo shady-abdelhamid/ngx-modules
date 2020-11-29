@@ -1,1 +1,5 @@
-<p>services works!</p>
+<card [iconClasses]="'fas fa-info-circle'" [title]="'User service'" [subTitle]="'reusable serice'">
+  <div body>
+    <p>{{ user | json }}</p>
+  </div>
+</card>
