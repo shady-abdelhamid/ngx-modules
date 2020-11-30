@@ -12,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LoaderComponent } from './loader/loader.component';
     TopOfPageComponent,
     CreditCardInputComponent,
     LoaderComponent,
+    TwitterPostComponent,
   ],
   imports: [
     CommonModule,
