@@ -13,6 +13,7 @@ import { CreditCardInputComponent } from './credit-card-input/credit-card-input.
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     CreditCardInputComponent,
     LoaderComponent,
     TwitterPostComponent,
+    RibbonComponent,
   ],
   imports: [
     CommonModule,

@@ -64,3 +64,26 @@
     <twitter-post></twitter-post>
   </div>
 </card>
+
+<!-- Ribbon -->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Ribbon'" [subTitle]="'reusable component'">
+  <div body>
+    <ribbon
+      [content]="'current draft'"
+      [location]="ribbonStyle.location"
+      [type]="ribbonStyle.type">
+    </ribbon>
+  </div>
+
+  <div footer>
+    <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+    <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+    <button (click)="ribbonStyle.type = RibbonType.warning">Warning</button>
+    <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+    <br>
+    <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">top left</button>
+    <button (click)="ribbonStyle.location = RibbonLocation.TopRight">top right</button>
+    <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">bottom left</button>
+    <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">bottom right</button>
+  </div>
+</card>

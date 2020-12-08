@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AccordionItem } from './accordion/accordion-item.interface';
 import { LoaderType } from './loader/loader-type.enum';
+import { RibbonLocation } from './ribbon/ribbon-location.enum';
+import { RibbonType } from './ribbon/ribbon-type.enum';
 
 @Component({
   selector: 'components',
@@ -16,6 +18,13 @@ export class ComponentsComponent implements OnInit {
 
   public progressbarValue = 25;
   public loaderType = LoaderType.Text;
+
+  public RibbonLocation = RibbonLocation;
+  public RibbonType = RibbonType;
+  public ribbonStyle = {
+    location: RibbonLocation.BottomRight,
+    type: RibbonType.Info,
+  };
 
   constructor() { }
 
