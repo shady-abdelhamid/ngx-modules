@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { RibbonComponent } from './ribbon/ribbon.component';
     LoaderComponent,
     TwitterPostComponent,
     RibbonComponent,
+    SimpleTableComponent,
   ],
   imports: [
     CommonModule,
