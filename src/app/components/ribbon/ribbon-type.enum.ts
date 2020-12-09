@@ -1,6 +1,6 @@
 export enum RibbonType {
-  Error = 'error',
-  Info = 'info',
-  Success = 'success',
-  warning = 'warning',
+  Error = 'ribbon--error',
+  Info = 'ribbon--info',
+  Success = 'ribbon--success',
+  warning = 'ribbon--warning',
 }

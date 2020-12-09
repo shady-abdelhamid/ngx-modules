@@ -5,45 +5,49 @@
     padding: 16px;
     position: fixed;
     text-align: center;
-    color: white;
-    z-index: 20;
+    color: #fff;
+    z-index: 2;
 
-    &.bottom-left {
-        left: -50px;
-        bottom: 25px;
-        transform: rotate(45deg);
+    &--bottom {
+        &-left {
+            left: -50px;
+            bottom: 25px;
+            transform: rotate(45deg);
+        }
+
+        &-right {
+            right: -50px;
+            bottom: 25px;
+            transform: rotate(-45deg);
+        }
     }
 
-    &.bottom-right {
-        right: -50px;
-        bottom: 25px;
-        transform: rotate(-45deg);
-    }
+    &--top {
+        &-left {
+            top: 25px;
+            left: -50px;
+            transform: rotate(-45deg);
+        }
 
-    &.top-left {
-        top: 25px;
-        left: -50px;
-        transform: rotate(-45deg);
+        &-right {
+            top: 25px;
+            right: -50px;
+            transform: rotate(45deg);
+        }
     }
-
-    &.top-right {
-        top: 25px;
-        right: -50px;
-        transform: rotate(45deg);
-    }
-    &.success {
+    &--success {
         background-color: $green;
     }
 
-    &.info {
+    &--info {
         background-color: $blue;
     }
 
-    &.error {
+    &--error {
         background-color: $red;
     }
 
-    &.warning {
+    &--warning {
         background-color: $orange;
     }
 }
