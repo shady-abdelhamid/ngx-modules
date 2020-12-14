@@ -16,6 +16,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
+import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { PagingComponent } from './paging/paging.component';
     RibbonComponent,
     SimpleTableComponent,
     PagingComponent,
+    LinkedinPostComponent,
   ],
   imports: [
     CommonModule,
