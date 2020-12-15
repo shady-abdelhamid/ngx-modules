@@ -19,3 +19,14 @@
     </p>
   </div>
 </card>
+
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subTitle]="'reusable pipes'">
+  <div body>
+    {{ dataToBeFlatten | flatten }}
+  </div>
+
+  <div footer>
+    <button (click)="modifyFlattenData()">modify</button>
+    <button (click)="reassignFlattenData()">reassign</button>
+  </div>
+</card>
