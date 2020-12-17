@@ -109,3 +109,17 @@
   </div>
 </card>
 
+<!-- Modal -->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Modal'" [subTitle]="'reusable component'">
+  <div body>
+    <modal [title]="'Modal Example'" #modal>
+      <p>Some Content</p>
+    </modal>
+  </div>
+
+  <div footer>
+    <button (click)="modal.open()">Call Modal</button>
+  </div>
+</card>
+
+
