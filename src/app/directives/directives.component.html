@@ -1,5 +1,5 @@
 <card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce Click'" [subTitle]="'reusable directive'">
   <div body>
-    <button>click me</button>
+    <button debounceClick (debounceClick)="log()">click me</button>
   </div>
 </card>

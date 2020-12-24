@@ -12,4 +12,8 @@ export class DirectivesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public log(): void {
+    console.log('Hello world');
+  }
+
 }
