@@ -18,6 +18,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ModalComponent } from './modal/modal.component';
     PagingComponent,
     LinkedinPostComponent,
     ModalComponent,
+    SnackbarComponent,
   ],
   imports: [
     CommonModule,

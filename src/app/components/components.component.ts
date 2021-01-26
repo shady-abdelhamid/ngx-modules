@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AccordionItem } from './accordion/accordion-item.interface';
 import { LoaderType } from './loader/loader-type.enum';
 import { RibbonLocation } from './ribbon/ribbon-location.enum';
 import { RibbonType } from './ribbon/ribbon-type.enum';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 @Component({
   selector: 'components',
@@ -26,9 +27,15 @@ export class ComponentsComponent implements OnInit {
     type: RibbonType.Info,
   };
 
+  @ViewChild('snackbar') public snackbar: SnackbarComponent;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public showSnackbar() {
+    this.snackbar.show();
   }
 
 }

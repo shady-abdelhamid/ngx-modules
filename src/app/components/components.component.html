@@ -122,4 +122,17 @@
   </div>
 </card>
 
+<!-- Modal -->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subTitle]="'reusable component'">
+  <div body>
+    <snackbar [message]="'Hello world!'" #snackbar>
+    </snackbar>
+  </div>
+
+  <div footer>
+    <button (click)="showSnackbar()">show snackbar</button>
+  </div>
+</card>
+
+
 
