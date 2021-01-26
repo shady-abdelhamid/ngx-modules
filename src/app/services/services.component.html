@@ -3,3 +3,16 @@
     <p>{{ user | json }}</p>
   </div>
 </card>
+
+<!-- snackbar service -->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subTitle]="'reusable component'">
+  <div body>
+    <snackbar [message]="'
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda id voluptatibus, aspernatur laboriosam odio cupiditate repudiandae numquam officiis aliquid inventore harum minima aperiam alias, explicabo perferendis cumque eius. Iusto!'" #snackbar>
+    </snackbar>
+  </div>
+
+  <div footer>
+    <button (click)="callSnackbar()">call snackbar</button>
+  </div>
+</card>

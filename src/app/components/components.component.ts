@@ -34,8 +34,8 @@ export class ComponentsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public showSnackbar() {
-    this.snackbar.show();
+  public showSnackbar(): void {
+    this.snackbar.showMessage();
   }
 
 }

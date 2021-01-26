@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SnackbarService } from './snackbar.service';
 import { User } from './user/user.model';
 import { UserService } from './user/user.service';
 
@@ -8,7 +9,7 @@ import { UserService } from './user/user.service';
 })
 export class ServicesComponent implements OnInit {
   user: User = new User();
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private snackbarService: SnackbarService) { }
 
   ngOnInit(): void {
     this.userService.getUserById(1).subscribe({
@@ -23,6 +24,10 @@ export class ServicesComponent implements OnInit {
         console.log('Done');
       }
     });
+  }
+
+  public callSnackbar(): void {
+    this.snackbarService.callSnackbar('a prompt from snackbar service.');
   }
 
 }
