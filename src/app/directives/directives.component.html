@@ -3,3 +3,11 @@
     <button debounceClick (debounceClick)="log()">click me</button>
   </div>
 </card>
+
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Copy'" [subTitle]="'reusable directive'">
+  <div body>
+    <button copy [appCopy]="'Hello World!'">
+      <i class="fas fa-copy">Copy!</i>
+    </button>
+  </div>
+</card>
