@@ -19,7 +19,6 @@ import { PagingComponent } from './paging/paging.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
 
-
 @NgModule({
   declarations: [
     ComponentsComponent,
@@ -36,11 +35,6 @@ import { ModalComponent } from './modal/modal.component';
     LinkedinPostComponent,
     ModalComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    FormsModule,
-    ComponentsRoutingModule
-  ]
+  imports: [CommonModule, SharedModule, FormsModule, ComponentsRoutingModule],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
