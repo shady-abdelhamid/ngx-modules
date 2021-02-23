@@ -135,3 +135,16 @@
 </card>
 
 
+<!-- quote -->
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'reusable component'">
+  <div body>
+    <shx-quote [quote]="'Treat a man as he is and he will remain as he is. Treat a man as he can and should be and he will become as he can and should be.'" [author]="'Stephen R. Covey'" [occupation]="'Author'">
+    </shx-quote>
+  </div>
+
+  <div footer>
+    <button (click)="showSnackbar()">show snackbar</button>
+  </div>
+</card>
+
+

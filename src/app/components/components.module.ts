@@ -18,6 +18,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ModalComponent } from './modal/modal.component';
     PagingComponent,
     LinkedinPostComponent,
     ModalComponent,
+    QuoteComponent,
   ],
   imports: [CommonModule, SharedModule, FormsModule, ComponentsRoutingModule],
 })
