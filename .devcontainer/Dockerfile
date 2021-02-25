@@ -13,7 +13,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # set home
 ENV HOME /home/node
 
-
 ENV TERM xterm
 
 # Set the default shell to bash rather than sh
@@ -34,4 +33,4 @@ ADD .p10k.zsh $HOME
 # RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
 # [Optional] Uncomment if you want to install more global node packages
- RUN su node -c "npm install -g @angular/cli"
+RUN su node -c "npm install -g @angular/cli"

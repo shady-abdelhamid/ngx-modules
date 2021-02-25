@@ -98,4 +98,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+source ~/.p10k.zsh
